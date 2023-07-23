@@ -40,7 +40,7 @@ export default function Work() {
                 companyLink: "https://meetiqs.de/",
                 role: "Front End Developer",
                 logo: MEET,
-                date: "2020 - Today",
+                date: "2020",
                 descBullets: [
                   "Assisted the copyright and design teams in the development of the UX",
                   "Maintained and updated features on the front page the UX",
