@@ -1,0 +1,142 @@
+.education-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
+
+.education-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.school-name-mobile {
+  font-size: 0;
+}
+
+.education-card:hover + .education-card-border {
+  border-color: #00e1ff;
+  width: 100%;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.education-card-border {
+  height: 30px;
+  width: 90%;
+  border-top: 2px solid rgba(211, 211, 211, 0.397);
+  margin: 20px 0;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.education-img {
+  object-fit: fill;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.degree-details-div {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column !important;
+  text-align: left;
+}
+
+.school-name {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.degree-name {
+  font-size: 1.3em;
+  margin: 5px 0;
+}
+
+.education-dates {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.education-bullets-title {
+  font-size: 1.3em;
+  margin: 0;
+  padding-top: 0.3em;
+}
+
+.education-bullet {
+  font-size: 1.2em;
+}
+
+/* Small laptop screens */
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+  .education-card-container {
+    font-size: 80%;
+  }
+}
+
+/* For mobile */
+@media (max-width: 1000px) {
+  .education-card-container {
+    padding: 0;
+    transform: scale(0.8);
+    width: 100%;
+  }
+
+  .education-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-card-border {
+    width: 90%;
+  }
+
+  .school-name-mobile {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-left: 0.8em;
+  }
+
+  .school-name {
+    font-size: 0;
+  }
+
+  .degree-name {
+    padding-top: 2px;
+    font-size: 1.25em;
+  }
+
+  .school-info-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .degree-details-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-img {
+    width: 4rem !important;
+    height: 4rem !important;
+    border-radius: 50%;
+  }
+
+  .education-card-right {
+    order: 1;
+  }
+
+  .education-card-left {
+    order: 2;
+  }
+}

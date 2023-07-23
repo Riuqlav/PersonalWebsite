@@ -1,0 +1,137 @@
+a {
+  text-decoration: none !important;
+}
+
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 3em;
+  row-gap: 1em;
+  margin: 0 5em;
+}
+.section {
+  margin-bottom: 30px !important;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 550px;
+}
+
+.experience-card:hover {
+  border: 2px solid #00e1ff;
+  transform: scale(1.04);
+}
+
+.experience-card:hover .experience-company {
+  color: #00e1ff;
+}
+
+.experience-company {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  margin: 1em;
+}
+
+.experience-text-details {
+  padding: 1.5em;
+  margin-top: 0;
+}
+
+.experience-text-role {
+  color: white !important;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.experience-text-date {
+  color: white !important;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.experience-text-desc {
+  color: white !important;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.experience-text-desc-bullets {
+  color: white !important;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.experience-text-desc:hover {
+  color: #00e1ff !important;
+  font-weight: bold;
+}
+
+/* Small laptop screens */
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+  .work {
+    font-size: 80%;
+  }
+
+  .experience-card {
+    min-height: 500px;
+  }
+
+  .experience-img {
+    width: 13rem;
+    height: auto;
+  }
+}
+.experience-img {
+  width: 20rem;
+  height: auto;
+}
+
+/* For mobile */
+@media (max-width: 1000px) {
+  .work {
+    height: fit-content !important;
+  }
+
+  .experience-cards-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-card {
+    margin-top: 2em;
+    font-size: 0.7em;
+    min-height: 0;
+  }
+
+  .experience-text-role {
+    font-size: 1.5em;
+  }
+
+  .experience-img {
+    width: 13rem;
+    overflow: hidden !important;
+    height: auto;
+  }
+
+  .experience-card:hover {
+    transform: none;
+  }
+
+  .experience-text-desc-bullets {
+    padding-left: 1.5em;
+  }
+}
