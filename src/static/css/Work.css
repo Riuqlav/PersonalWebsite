@@ -9,6 +9,7 @@ a {
   row-gap: 1em;
   margin: 0 5em;
 }
+
 .section {
   margin-bottom: 30px !important;
 }
@@ -23,8 +24,8 @@ a {
 }
 
 .experience-card:hover {
-  border: 2px solid #00e1ff;
-  transform: scale(1.04);
+  border: 1px solid #00e1ff;
+  transform: scale(1.01);
 }
 
 .experience-card:hover .experience-company {
@@ -95,6 +96,7 @@ a {
     height: auto;
   }
 }
+
 .experience-img {
   width: 20rem;
   height: auto;

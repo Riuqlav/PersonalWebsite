@@ -1,7 +1,7 @@
 import React from "react";
 import WorkCard from "./cards/WorkCard";
 import BARCRAWL from "../static/images/BARCRAWL.png";
-import CHAT from "../static/images/CHAT.png";
+import TNR from "../static/images/TNR.png";
 import SBG from "../static/images/SBG.png";
 import MEET from "../static/images/MEET.png";
 import TREBUCHE from "../static/images/TREBUCHE.png";
@@ -34,6 +34,22 @@ export default function Work() {
                 ],
               }}
             />
+                <WorkCard
+                  cardInfo={{
+                    company: "The New Royals-NFT",
+                    companyLink: "https://riuqlav.github.io/TNR/",
+                    logo: TNR,
+                    // desc: "<VIEW CODE>",
+                    link: "https://github.com/Riuqlav/TNR",
+                    date: "2023 - Today",
+                    role: "Front End Developer",
+                    descBullets: [
+                      "React, MUI, Tailwind, and Git for effective development and version control",
+                      "Contributed to UX development by aiding the copyright and design teams",
+                      "Implemented and sustained updates on the UX front page"
+                    ],
+                  }}
+                />
             <WorkCard
               cardInfo={{
                 company: "MeetIQs",
@@ -48,28 +64,28 @@ export default function Work() {
                 ],
               }}
             />
-            <WorkCard
-              cardInfo={{
-                company: "Chattons chat app",
-                companyLink: "https://riuqlav.github.io/Chattons/",
-                logo: CHAT,
-                desc: "<VIEW CODE>",
-                link: "https://github.com/Riuqlav/Chattons",
-                date: "2021",
-                role: "FullStack Developer",
-                descBullets: [
-                  "Displayed the fundamentals of a complete CRUD aplication",
-                  "Used React hooks, Firebase database/ Google auth",
-                  "TypeScript, and styled with Material UI",
-                ],
-              }}
-            />
           </div>
         </Fade>
       </div>
       <div className="slide">
         <h2 className="section-heading">My Work</h2>
         <div className="experience-cards-div">
+        <WorkCard
+            cardInfo={{
+              company: "Trebuché E-shop",
+              companyLink: "https://riuqlav.github.io/trebuche/",
+              logo: TREBUCHE,
+              desc: "<VIEW CODE>",
+              link: "https://github.com/Riuqlav/trebuche",
+              date: "2020",
+              role: "FrontEnd Developer",
+              descBullets: [
+                  "Revamped UI and app interface using Styled Components",
+                  "Developed over 50 reusable components used organization-wide",
+                  "Implemented mock data to showcase all 7 pages' layout"
+                ],
+            }}
+          />
           <WorkCard
             cardInfo={{
               company: "Rvideo",
@@ -85,22 +101,6 @@ export default function Work() {
                 "Styled with Material UI and CSS",
               ],
               headerColor: "linear-gradient(315deg, #3f0d12 0%, #a71d31 74%)",
-            }}
-          />
-          <WorkCard
-            cardInfo={{
-              company: "Trebuché E-shop",
-              companyLink: "https://riuqlav.github.io/trebuche/",
-              logo: TREBUCHE,
-              desc: "<VIEW CODE>",
-              link: "https://github.com/Riuqlav/trebuche",
-              date: "2020",
-              role: "FrontEnd Developer",
-              descBullets: [
-                "Revamped UI and app interface using Styled Components",
-                "Developed more than 50+ reusable components used throughout the organization",
-                "Implemented mock data to present the layout of all 7 pages",
-              ],
             }}
           />
           <WorkCard
