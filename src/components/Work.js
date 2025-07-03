@@ -21,6 +21,20 @@ export default function Work() {
         <Fade bottom>
           <div className="experience-cards-div">
           <WorkCard
+            cardInfo={{
+              company: "DriveCO",
+              companyLink: "https://www.driveco.com/",
+              logo: DRIVECO,
+              date: "2024 - Today",
+              role: "Front-end Developer",
+              descBullets: [
+                "Improved app rating from 3.9 to 4.3 in 3 months by leading key features",
+                "Developed UI for Android and iOS using Android Studio and Xcode",
+                "Acted as tech holder for mobile feature delivery",
+              ],
+            }}
+          />
+          <WorkCard
               cardInfo={{
                 company: "SBG Systems",
                 companyLink: "https://www.sbg-systems.com/",
@@ -34,22 +48,6 @@ export default function Work() {
                 ],
               }}
             />
-                <WorkCard
-                  cardInfo={{
-                    company: "The New Royals-NFT",
-                    companyLink: "https://riuqlav.github.io/TNR/",
-                    logo: TNR,
-                    // desc: "<VIEW CODE>",
-                    link: "https://github.com/Riuqlav/TNR",
-                    date: "2023 - Today",
-                    role: "Front End Developer",
-                    descBullets: [
-                      "React, MUI, Tailwind, and Git for effective development and version control",
-                      "Contributed to UX development by aiding the copyright and design teams",
-                      "Implemented and sustained updates on the UX front page"
-                    ],
-                  }}
-                />
             <WorkCard
               cardInfo={{
                 company: "MeetIQs",
@@ -70,6 +68,22 @@ export default function Work() {
       <div className="slide">
         <h2 className="section-heading">My Work</h2>
         <div className="experience-cards-div">
+        <WorkCard
+                  cardInfo={{
+                    company: "The New Royals-NFT",
+                    companyLink: "https://riuqlav.github.io/TNR/",
+                    logo: TNR,
+                    // desc: "<VIEW CODE>",
+                    link: "https://github.com/Riuqlav/TNR",
+                    date: "2023 - Today",
+                    role: "Front End Developer",
+                    descBullets: [
+                      "React, MUI, Tailwind, and Git for effective development and version control",
+                      "Contributed to UX development by aiding the copyright and design teams",
+                      "Implemented and sustained updates on the UX front page"
+                    ],
+                  }}
+                />
         <WorkCard
             cardInfo={{
               company: "Trebuché E-shop",
@@ -103,23 +117,7 @@ export default function Work() {
               headerColor: "linear-gradient(315deg, #3f0d12 0%, #a71d31 74%)",
             }}
           />
-          <WorkCard
-            cardInfo={{
-              company: "BAR CRAWL",
-              companyLink: "https://riuqlav.github.io/bar-crawl-meetup/",
-              logo: BARCRAWL,
-              desc: "<VIEW CODE>",
-              link: "https://github.com/Riuqlav/bar-crawl-meetup",
-              date: "2021",
-              role: "FullStack Developer",
-              descBullets: [
-                "Displayed the fundamentals of a complete CRUD app",
-                "Used React hooks, Route, Firebase Database, and Storage",
-                "Styled with CSS Modules",
-              ],
-            }}
-          />
-        </div>
+          </div>
         <ReactGA.OutboundLink></ReactGA.OutboundLink>
       </div>
     </div>
